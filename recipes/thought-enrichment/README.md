@@ -1,5 +1,9 @@
 # Thought Enrichment Pipeline
 
+![Community Contribution](https://img.shields.io/badge/OB1_COMMUNITY-Approved_Contribution-2ea44f?style=for-the-badge&logo=github)
+
+**Created by [@alanshurafa](https://github.com/alanshurafa)**
+
 Retroactively classify and enrich your existing thoughts with structured metadata. The pipeline uses an LLM (via OpenRouter or Anthropic API) to extract type, summary, topics, tags, people, action items, confidence, and importance for each thought. A separate regex-based scanner detects sensitive content (SSNs, credit cards, API keys, health data) and assigns sensitivity tiers.
 
 ## Prerequisites
