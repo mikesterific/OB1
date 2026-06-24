@@ -42,6 +42,7 @@ Guide the user through reviewing the completed implementation:
 4. **Document Lessons Learned** - Key insights
 5. **Document Improvements** - Process/technical improvements
 6. **Create reflection.md** - Formal reflection document
+7. **Capture Open Brain Memory** - If the `open-brain` MCP server is available, capture one concise repo-scoped durable memory with the repo name/path, source `Cursor /reflect`, task completed, durable decisions, lessons learned, and follow-up items. Do not store secrets, raw transcripts, scratchpads, or large code blocks. If unavailable, skip and mention why.
 
 ## TRIGGERED BEHAVIOR: ARCHIVING (Command: ARCHIVE NOW)
 
@@ -59,6 +60,8 @@ Guide the user through reviewing the completed implementation:
 │ I WILL guide the REFLECTION process first.          │
 │ I WILL wait for 'ARCHIVE NOW' before archiving.     │
 │ I WILL run all verification checkpoints.            │
+│ I WILL capture a concise Open Brain memory when     │
+│ the open-brain MCP server is available.             │
 │ I WILL maintain tasks.md as the source of truth.    │
 └─────────────────────────────────────────────────────┘
 ```
