@@ -1,0 +1,28 @@
+---
+description: File verification protocol
+globs: file-verification.mdc
+alwaysApply: false
+---
+
+# File Verification Protocol
+
+## Before Any File Operation
+
+```mermaid
+graph TD
+    Start["File Operation"] --> CheckExists{"File Exists?"}
+    CheckExists -->|"Yes"| ReadFirst["Read Current Content"]
+    CheckExists -->|"No"| CreateNew["Create New File"]
+    ReadFirst --> ValidateContent["Validate Content"]
+    ValidateContent --> ProceedEdit["Proceed with Edit"]
+    CreateNew --> VerifyPath["Verify Path is Correct"]
+    VerifyPath --> WriteContent["Write Content"]
+```
+
+## Verification Checklist
+
+- [ ] Verify file path is correct
+- [ ] Read existing content before editing
+- [ ] Backup critical content before major changes
+- [ ] Validate changes after writing
+- [ ] Confirm no unintended modifications

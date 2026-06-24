@@ -1,0 +1,32 @@
+---
+description: Workflow for Level 2 Simple Enhancement tasks
+globs: workflow-level2.mdc
+alwaysApply: false
+---
+
+# Level 2: Simple Enhancement Workflow
+
+## Overview
+Level 2 tasks are simple enhancements affecting a single component.
+
+## Process
+
+```mermaid
+graph TD
+    Start["📝 Enhancement"] --> Plan["Basic Planning"]
+    Plan --> Implement["Implementation"]
+    Implement --> Test["Testing"]
+    Test --> Reflect["Basic Reflection"]
+    Reflect --> Archive["Archive"]
+```
+
+## Characteristics
+- Single component focus
+- Limited dependencies
+- Straightforward implementation
+- Basic testing coverage
+
+## Documentation Requirements
+- tasks.md updated with checklist
+- Basic reflection document
+- Archive upon completion

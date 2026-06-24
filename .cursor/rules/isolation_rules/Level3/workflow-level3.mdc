@@ -1,0 +1,47 @@
+---
+description: Workflow for Level 3 Intermediate Feature tasks
+globs: workflow-level3.mdc
+alwaysApply: false
+---
+
+# Level 3: Intermediate Feature Workflow
+
+## Overview
+Level 3 tasks involve multi-component features requiring comprehensive planning.
+
+## Process
+
+```mermaid
+graph TD
+    Start["🔧 Feature"] --> Plan["Comprehensive Planning"]
+    Plan --> Creative["Creative Phase"]
+    Creative --> Implement["Phased Implementation"]
+    Implement --> Test["Thorough Testing"]
+    Test --> Reflect["Detailed Reflection"]
+    Reflect --> Archive["Feature Archive"]
+```
+
+## Phases
+
+### 1. Planning Phase
+- Document requirements
+- Identify affected components
+- Create implementation checklist
+
+### 2. Creative Phase (if needed)
+- Design decisions
+- Architecture considerations
+- UI/UX design
+
+### 3. Implementation Phase
+- Follow checklist
+- Test incrementally
+- Document progress
+
+### 4. Reflection Phase
+- Capture lessons learned
+- Update system patterns
+
+### 5. Archive Phase
+- Complete documentation
+- Archive all artifacts

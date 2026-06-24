@@ -1,0 +1,30 @@
+---
+description: Open Brain repo purpose and structure
+alwaysApply: true
+---
+
+# Open Brain Repo Context
+
+Open Brain is a persistent AI memory system: one shared Supabase/Postgres + pgvector database, one remote MCP/API layer, and many AI clients. It is not a notes app or a single product app; it is infrastructure for letting Claude, ChatGPT, Cursor, Claude Code, OpenClaw, and future agents share durable memory.
+
+Core concepts:
+
+- The foundational store is the `thoughts` table with text content, vector embeddings, metadata, and semantic search.
+- MCP servers and APIs must be remote, usually Supabase Edge Functions, not local desktop servers.
+- Contributions should preserve the core `thoughts` table and add sidecar schemas rather than replacing it.
+- OB1 Agent Memory adds governed operational memory for agent runtimes with provenance, review status, use policy, recall traces, and audit events.
+- Agent-written memory should default to evidence-only pending review; instruction-grade memory requires human confirmation or trusted import.
+
+Repo map:
+
+- `docs/`: setup, FAQ, AI-assisted setup, provenance, safety, and operating guides.
+- `server/`: core remote MCP server for search, fetch, capture, and memory access.
+- `extensions/`: curated six-part learning path for practical personal-agent systems.
+- `primitives/`: reusable concept guides used by multiple extensions.
+- `recipes/`: standalone imports, workflows, dedupe tools, digests, and agent-memory workflows.
+- `schemas/`: database extensions and sidecar tables.
+- `integrations/`: Edge Functions, APIs, capture sources, OpenClaw integration, and deployment targets.
+- `dashboards/`: frontend templates for browsing, searching, auditing, and managing Open Brain data.
+- `skills/`: reusable plain-text agent skill packs.
+
+When changing this repo, follow existing contribution shape: each contribution lives in its own folder under the right category and includes `README.md` plus `metadata.json`.

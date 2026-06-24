@@ -1,0 +1,33 @@
+---
+description: Platform detection and command adaptation
+globs: platform-awareness.mdc
+alwaysApply: false
+---
+
+# Platform Awareness
+
+## Platform Detection
+
+Detect the current platform and adapt commands accordingly:
+
+```mermaid
+graph TD
+    Start["Detect Platform"] --> Check{"Check OS"}
+    Check -->|"Windows"| Win["Use Windows Commands"]
+    Check -->|"macOS/Linux"| Unix["Use Unix Commands"]
+```
+
+## Command Mapping
+
+| Action | Windows | macOS/Linux |
+|--------|---------|-------------|
+| Create directory | `mkdir directory` | `mkdir -p directory` |
+| Create file | `echo. > file` | `touch file` |
+| Delete file | `del file` | `rm file` |
+| Delete directory | `rmdir /s /q dir` | `rm -rf dir` |
+| Copy file | `copy src dst` | `cp src dst` |
+| Move file | `move src dst` | `mv src dst` |
+| List files | `dir` | `ls -la` |
+| Find text | `findstr pattern file` | `grep pattern file` |
+| Environment var | `%VAR%` | `$VAR` |
+| Path separator | `\` | `/` |

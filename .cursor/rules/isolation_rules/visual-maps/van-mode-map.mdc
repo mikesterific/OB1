@@ -1,0 +1,31 @@
+---
+description: Visual process map for VAN mode (Initialization)
+globs: van-mode-map.mdc
+alwaysApply: false
+---
+
+# VAN MODE: Initialization
+
+```mermaid
+graph TD
+    Start["🚀 VAN MODE"] --> VerifyMB["Verify Memory Bank"]
+    VerifyMB --> ReadContext["Read Project Context"]
+    ReadContext --> GetTask["Get Task Description"]
+    GetTask --> Analyze["Analyze Complexity"]
+    Analyze --> Level{"Determine Level"}
+    Level -->|"1"| L1["Quick Bug Fix"]
+    Level -->|"2"| L2["Simple Enhancement"]
+    Level -->|"3"| L3["Intermediate Feature"]
+    Level -->|"4"| L4["Complex System"]
+    L1 & L2 & L3 & L4 --> UpdateTasks["Update tasks.md"]
+    UpdateTasks --> NextMode["Recommend Next Mode"]
+```
+
+## Steps
+
+1. **Verify Memory Bank** - Ensure all required files exist
+2. **Read Context** - Load project context files
+3. **Get Task** - Understand what needs to be done
+4. **Analyze** - Determine complexity level
+5. **Update** - Record task in tasks.md
+6. **Transition** - Move to appropriate next mode

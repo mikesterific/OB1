@@ -1,0 +1,39 @@
+---
+description: Visual process map for REFLECT mode
+globs: reflect-mode-map.mdc
+alwaysApply: false
+---
+
+# REFLECT MODE: Task Review
+
+```mermaid
+graph TD
+    Start["🔍 REFLECT MODE"] --> ReadTasks["Read tasks.md"]
+    ReadTasks --> ReadProgress["Read progress.md"]
+    ReadProgress --> Analyze["Analyze What Worked"]
+    Analyze --> Document["Create reflection-*.md"]
+    Document --> UpdatePatterns["Update systemPatterns.md"]
+    UpdatePatterns --> NextMode["→ ARCHIVE MODE"]
+```
+
+## Reflection Template
+```markdown
+# Reflection: [Task ID]
+
+## Summary
+[What was accomplished]
+
+## What Worked Well
+- Item 1
+- Item 2
+
+## Challenges Faced
+- Challenge 1: [How resolved]
+
+## Lessons Learned
+- Lesson 1
+- Lesson 2
+
+## Future Recommendations
+- Recommendation 1
+```

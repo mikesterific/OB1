@@ -1,0 +1,36 @@
+---
+description: Visual process map for CREATIVE mode
+globs: creative-mode-map.mdc
+alwaysApply: false
+---
+
+# CREATIVE MODE: Design Decisions
+
+```mermaid
+graph TD
+    Start["🎨 CREATIVE MODE"] --> ReadTasks["Read tasks.md"]
+    ReadTasks --> Identify["Identify Design Needs"]
+    Identify --> Create["Create creative-*.md"]
+    Create --> Explore["Explore Options"]
+    Explore --> Document["Document Decisions"]
+    Document --> UpdateTasks["Update tasks.md"]
+    UpdateTasks --> NextMode["→ IMPLEMENT MODE"]
+```
+
+## Creative Document Structure
+```markdown
+# Creative Phase: [Feature Name]
+
+## Context
+[What problem are we solving?]
+
+## Options Considered
+1. Option A: [Description]
+2. Option B: [Description]
+
+## Decision
+[Which option and why]
+
+## Implementation Notes
+[How to implement the decision]
+```

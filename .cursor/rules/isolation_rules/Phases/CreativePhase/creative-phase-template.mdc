@@ -1,0 +1,55 @@
+---
+description: Template for creative phase documents
+globs: creative-phase-template.mdc
+alwaysApply: false
+---
+
+# Creative Phase Template
+
+Use this template when creating `memory-bank/creative/creative-[feature].md` files.
+
+```markdown
+# Creative Phase: [Feature Name]
+
+## Status: [DRAFT | IN PROGRESS | COMPLETE]
+
+## Context
+[Describe the problem being solved and why a creative phase is needed]
+
+## Requirements
+- Requirement 1
+- Requirement 2
+
+## Options Considered
+
+### Option 1: [Name]
+**Description:** [What this option entails]
+**Pros:**
+- Pro 1
+- Pro 2
+**Cons:**
+- Con 1
+
+### Option 2: [Name]
+**Description:** [What this option entails]
+**Pros:**
+- Pro 1
+**Cons:**
+- Con 1
+
+## Decision
+**Selected:** Option [X]
+**Rationale:** [Why this option was chosen]
+
+## Implementation Plan
+1. Step 1
+2. Step 2
+3. Step 3
+
+## Open Questions
+- Question 1?
+
+---
+*Created: [Date]*
+*Status Updated: [Date]*
+```

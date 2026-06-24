@@ -1,0 +1,27 @@
+---
+description: Visual process map for PLAN mode
+globs: plan-mode-map.mdc
+alwaysApply: false
+---
+
+# PLAN MODE: Task Planning
+
+```mermaid
+graph TD
+    Start["📋 PLAN MODE"] --> ReadTasks["Read tasks.md"]
+    ReadTasks --> LoadContext["Load Active Context"]
+    LoadContext --> Analyze["Analyze Requirements"]
+    Analyze --> CreatePlan["Create Implementation Plan"]
+    CreatePlan --> Checklist["Build Checklist"]
+    Checklist --> Identify["Identify Creative Needs"]
+    Identify --> UpdateTasks["Update tasks.md"]
+    UpdateTasks --> NextMode{"Creative Needed?"}
+    NextMode -->|"Yes"| Creative["→ CREATIVE MODE"]
+    NextMode -->|"No"| Implement["→ IMPLEMENT MODE"]
+```
+
+## Planning Outputs
+- Implementation checklist
+- Files to modify list
+- Dependencies identified
+- Creative phase flags

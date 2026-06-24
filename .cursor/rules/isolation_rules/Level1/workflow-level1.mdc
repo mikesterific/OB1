@@ -1,0 +1,32 @@
+---
+description: Workflow for Level 1 Quick Bug Fix tasks
+globs: workflow-level1.mdc
+alwaysApply: false
+---
+
+# Level 1: Quick Bug Fix Workflow
+
+## Overview
+Level 1 tasks are simple, isolated fixes that can be completed quickly.
+
+## Process
+
+```mermaid
+graph TD
+    Start["🐛 Bug Identified"] --> Verify["Verify Bug Location"]
+    Verify --> Fix["Apply Fix"]
+    Fix --> Test["Test Fix"]
+    Test --> Document["Quick Documentation"]
+    Document --> Complete["✅ Complete"]
+```
+
+## Characteristics
+- Single file changes
+- No architectural impact
+- Clear, isolated scope
+- Minimal testing required
+
+## Documentation
+- Brief note in progress.md
+- No creative phase required
+- Simple reflection optional

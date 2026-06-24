@@ -1,0 +1,39 @@
+---
+description: Visual process map for ARCHIVE mode
+globs: archive-mode-map.mdc
+alwaysApply: false
+---
+
+# ARCHIVE MODE: Task Documentation
+
+```mermaid
+graph TD
+    Start["📦 ARCHIVE MODE"] --> ReadAll["Read All Task Docs"]
+    ReadAll --> Compile["Compile Archive Document"]
+    Compile --> Create["Create archive-*.md"]
+    Create --> UpdateProgress["Update progress.md"]
+    UpdateProgress --> ClearTasks["Clear tasks.md"]
+    ClearTasks --> Complete["✅ Task Complete"]
+```
+
+## Archive Document Structure
+```markdown
+# Archive: [Task ID]
+
+## Task Summary
+[Brief description]
+
+## Implementation Details
+[What was done]
+
+## Files Changed
+- file1.ext
+- file2.ext
+
+## Lessons Learned
+[Key takeaways]
+
+## Related Documents
+- creative-*.md
+- reflection-*.md
+```

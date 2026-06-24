@@ -1,0 +1,31 @@
+---
+description: Workflow for Level 4 Complex System tasks
+globs: workflow-level4.mdc
+alwaysApply: false
+---
+
+# Level 4: Complex System Workflow
+
+## Overview
+Level 4 tasks involve significant architectural changes or new systems.
+
+## Process
+
+```mermaid
+graph TD
+    Start["🏗️ System Change"] --> Arch["Architectural Planning"]
+    Arch --> Creative["Extended Creative Phase"]
+    Creative --> Phase1["Phase 1 Implementation"]
+    Phase1 --> Review1["Review & Adjust"]
+    Review1 --> Phase2["Phase 2 Implementation"]
+    Phase2 --> Integration["Integration Testing"]
+    Integration --> Reflect["Comprehensive Reflection"]
+    Reflect --> Archive["Comprehensive Archive"]
+```
+
+## Key Considerations
+- Multiple creative phases may be needed
+- Phased implementation required
+- Regular checkpoints and reviews
+- Comprehensive documentation
+- Impact analysis required

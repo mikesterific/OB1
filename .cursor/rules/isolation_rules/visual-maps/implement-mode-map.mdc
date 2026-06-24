@@ -1,0 +1,26 @@
+---
+description: Visual process map for IMPLEMENT mode
+globs: implement-mode-map.mdc
+alwaysApply: false
+---
+
+# IMPLEMENT MODE: Code Implementation
+
+```mermaid
+graph TD
+    Start["⚙️ IMPLEMENT MODE"] --> ReadTasks["Read tasks.md"]
+    ReadTasks --> ReadCreative["Read Creative Docs"]
+    ReadCreative --> GetChecklist["Get Checklist"]
+    GetChecklist --> Implement["Implement Changes"]
+    Implement --> Test["Test Changes"]
+    Test --> UpdateProgress["Update progress.md"]
+    UpdateProgress --> CheckComplete{"All Done?"}
+    CheckComplete -->|"No"| Implement
+    CheckComplete -->|"Yes"| NextMode["→ REFLECT MODE"]
+```
+
+## Implementation Guidelines
+- Follow checklist order
+- Test after each change
+- Update tasks.md status
+- Commit working changes
